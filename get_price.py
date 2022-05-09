@@ -7,7 +7,7 @@ session = Session()
 coin = "BTC"
 if len(sys.argv) > 1:
     coin = str.upper(sys.argv[1])
-url = "https://www.ouyicn.work/api/v5/market/books?instId="+coin+"-USDT"
+url = "https://www.ouyicn.info/api/v5/market/books?instId="+coin+"-USDT"
 response = session.get(url)
 data_list = json.loads(response.text)
 if data_list["code"] == '51001':
